@@ -646,3 +646,8 @@ nav .logo {
   margin-right: auto;
   padding: 5px 0;
 }
+.logo {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
