@@ -637,3 +637,12 @@ footer {
   background-color: #0084c1;
   transition: background-color 0.3s ease;
 }
+.logo {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+nav .logo {
+  margin-right: auto;
+  padding: 5px 0;
+}
