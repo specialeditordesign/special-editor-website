@@ -651,3 +651,8 @@ nav .logo {
   width: auto;
   display: block;
 }
+.logo {
+  max-height: 60px; /* adjust as needed */
+  width: auto;
+  display: block;
+}
