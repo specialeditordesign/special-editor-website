@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Special Editor - Home</title>
@@ -9,8 +13,14 @@
 <body>
 
 <header>
+  <label class="theme-switch">
+    <input type="checkbox" id="darkToggle">
+    <span class="slider"></span>
+  </label>
+
   <nav>
-    <div class="logo">Special Editor</div>
+    <img src="assets/logo.png" alt="Your Brand Logo" class="logo">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -21,40 +31,42 @@
     </ul>
   </nav>
 </header>
+
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-content" data-aos="fade-down">
     <h1>Design That Speaks. Videos That Move.</h1>
     <p>Helping businesses, creators & entrepreneurs stand out with bold visuals.</p>
     <a href="order.html" class="btn">Start Your Project</a>
   </div>
 </section>
+
 <section class="services">
-  <div class="section-title">
+  <div class="section-title" data-aos="fade-up">
     <h2>My Services</h2>
     <p>I offer a wide range of design and editing services tailored to your needs.</p>
   </div>
 
   <div class="services-grid">
-    <div class="service-item">
+    <div class="service-item" data-aos="fade-up">
       <img src="assets/images/logo.png" alt="Logo Design">
       <h3>Logo Design</h3>
     </div>
-    <div class="service-item">
+    <div class="service-item" data-aos="fade-up" data-aos-delay="100">
       <img src="assets/images/video-editing.png" alt="Video Editing">
       <h3>Video Editing</h3>
     </div>
-    <div class="service-item">
+    <div class="service-item" data-aos="fade-up" data-aos-delay="200">
       <img src="assets/images/social-post.png" alt="Social Post">
       <h3>Social Post</h3>
     </div>
-    <div class="service-item">
+    <div class="service-item" data-aos="fade-up" data-aos-delay="300">
       <img src="assets/images/color-grading.png" alt="Color Grading">
       <h3>Color Grading</h3>
     </div>
-    <!-- You can add more items like Banner, Thumbnails, etc. -->
   </div>
 </section>
-<section class="stats">
+
+<section class="stats" data-aos="zoom-in">
   <div class="stats-grid">
     <div class="stat-item">
       <h2>1100+</h2>
@@ -74,26 +86,49 @@
     </div>
   </div>
 </section>
+
 <section class="testimonials">
-  <div class="section-title">
+  <div class="section-title" data-aos="fade-up">
     <h2>What My Customers Say</h2>
     <p>Trusted by clients around the world</p>
   </div>
 
-  <div class="testimonial-card">
+  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
     <img src="assets/images/testimonial1.jpg" alt="Client Photo">
     <h3>Elizabeth Anne</h3>
     <p class="role">Fashion Designer</p>
     <p class="feedback">"Purus eget consectetur massa amet. Hactor bodiam suspendie faucibus posuere dignissim amet to atthe."</p>
   </div>
 
-  <div class="testimonial-card">
+  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
     <img src="assets/images/testimonial2.jpg" alt="Client Photo">
     <h3>William Roy</h3>
     <p class="role">WP Developer</p>
     <p class="feedback">"Vitaer of sollicitudin mauris erat odio maecenas mattis praesent. Eget vitae magna condimentum tristique."</p>
   </div>
 </section>
+
+<!-- JavaScript: Hamburger Menu -->
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("show");
+  }
+</script>
+
+<!-- JavaScript: Dark Mode Toggle -->
+<script>
+  const toggle = document.getElementById('darkToggle');
+  toggle.addEventListener('change', function () {
+    document.body.classList.toggle('dark-mode', this.checked);
+  });
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

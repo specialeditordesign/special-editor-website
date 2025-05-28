@@ -243,3 +243,397 @@ nav {
   background: #f1f1f1;
   padding: 10px 15px;
   border-ra
+/* -----------------------------------
+   Mobile Responsiveness (max-width 768px)
+------------------------------------ */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #333;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-item img {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .stats-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stat-item h2 {
+    font-size: 28px;
+  }
+
+  .stat-item p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .order-form {
+    padding: 40px 20px;
+  }
+
+  .order-form form {
+    gap: 15px;
+  }
+
+  .order-form input,
+  .order-form select,
+  .order-form textarea {
+    font-size: 14px;
+  }
+
+  .payment-methods {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .order-form .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .testimonial-card h3 {
+    font-size: 18px;
+  }
+
+  .testimonial-card .feedback {
+    font-size: 14px;
+  }
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #121212;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+}
+/* Hamburger menu hidden by default on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+/* Hide nav links initially on mobile */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #121212;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+font-size: clamp(1rem, 2.5vw, 2rem);
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+}
+/* Dark mode toggle switch */
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch .slider {
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.theme-switch .slider::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+.theme-switch input:checked + .slider {
+  background-color: #333;
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+  color: #00cfff;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+.logo {
+  height: 60px;
+  width: auto;
+}
+/* ================================
+   Base: Fonts & Color Variables
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  /* Primary Colors */
+  --charcoal-black: #121212;
+  --dark-blue: #064C75;
+  --aqua-blue: #00B4C1;
+
+  /* Supporting Colors */
+  --light-gray: #E2E2E2;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* Typography */
+  --font-base: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--white);
+  color: var(--charcoal-black);
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================
+   Header
+================================= */
+header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* ================================
+   Buttons
+=================================
+/* Brand Colors */
+:root {
+  --charcoal-black: #121212;
+  --dark-blue: #064C75;
+  --aqua-blue: #00B4C1;
+  --light-gray: #E2E2E2;
+  --white: #FFFFFF;
+  --black: #000000;
+  --font-base: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  background: var(--white);
+  color: var(--charcoal-black);
+}
+
+/* Header Styling */
+header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Navigation Links */
+.nav-links li a {
+  color: var(--white);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links li a:hover {
+  color: var(--aqua-blue);
+}
+
+/* Button Styling */
+.btn {
+  background: var(--aqua-blue);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: var(--dark-blue);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--charcoal-black);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+.hero {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn:hover {
+  background-color: #0084c1;
+  transition: background-color 0.3s ease;
+}
