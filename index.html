@@ -12,16 +12,11 @@
 </head>
 <body>
 
-<header>
-  <label class="theme-switch">
-    <input type="checkbox" id="darkToggle">
-    <span class="slider"></span>
-  </label>
-
   <nav>
     <img src="assets/logo.png" alt="Your Brand Logo" class="logo">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
+      <a href="contact.html" class="btn top-contact">Contact</a>
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
@@ -121,14 +116,6 @@
     const navLinks = document.querySelector(".nav-links");
     navLinks.classList.toggle("show");
   }
-</script>
-
-<!-- JavaScript: Dark Mode Toggle -->
-<script>
-  const toggle = document.getElementById('darkToggle');
-  toggle.addEventListener('change', function () {
-    document.body.classList.toggle('dark-mode', this.checked);
-  });
 </script>
 
 <!-- AOS JS -->
