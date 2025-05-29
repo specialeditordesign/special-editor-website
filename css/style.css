@@ -810,3 +810,66 @@ header {
 nav {
   background-color: transparent; /* or #121212 if needed */
 }
+.custom-footer {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 80px 20px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-footer .tagline-top {
+  font-size: 18px;
+  color: #00B4C1;
+  margin-bottom: 10px;
+}
+
+.custom-footer .tagline-main {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.custom-footer .hire-me {
+  background-color: #00B4C1;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.custom-footer .hire-me:hover {
+  background-color: #0084a1;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 50px;
+  padding-top: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ccc;
+}
+
+.social-icons a {
+  color: #00B4C1;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: white;
+}
