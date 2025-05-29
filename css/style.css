@@ -799,3 +799,17 @@ nav {
 .top-contact:hover {
   background-color: #0084a1;
 }
+header {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  background-color: transparent; /* or #121212 if needed */
+}
+git add .
+git commit -m "Fix header background to black (#121212)"
+git push
