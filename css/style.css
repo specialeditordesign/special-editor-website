@@ -664,3 +664,94 @@ body.dark-mode a {
   height: auto;
   display: block;
 }
+/* Elito Hero Section */
+.elito-hero {
+  background-color: #121212;
+  padding: 100px 60px;
+  color: #fff;
+}
+
+.elito-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.elito-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+}
+
+.elito-text h3 {
+  font-size: 28px;
+  color: #FFD700; /* Yellow like Elito */
+  margin-bottom: 10px;
+}
+
+.elito-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.elito-text h2 {
+  font-size: 24px;
+  color: #00ff88;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.elito-text p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.hire-btn {
+  background-color: #00ff88;
+  color: #121212;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #00d577;
+}
+
+/* Right image */
+.elito-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.elito-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .elito-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .elito-text, .elito-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .elito-text h1 {
+    font-size: 36px;
+  }
+
+  .elito-text h2 {
+    font-size: 20px;
+  }
+}
