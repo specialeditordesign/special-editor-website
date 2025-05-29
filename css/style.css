@@ -537,3 +537,83 @@ body.dark-mode a {
   background-color: #121212;
   color: #fff;
 }
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  color: white;
+  padding: 100px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #FFD700;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.hire-me {
+  background-color: #00B4C1;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.hire-me:hover {
+  background-color: #0084c1;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  max-width: 500px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+}
