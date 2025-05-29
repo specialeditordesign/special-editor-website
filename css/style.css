@@ -617,3 +617,50 @@ body.dark-mode a {
     margin-top: 30px;
   }
 }
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212; /* Your desired black */
+  color: white;
+  padding: 100px 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1,
+.hero-text h2,
+.hero-text h3,
+.hero-text p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-text .btn.hire-me {
+  background-color: #00B4C1;
+  color: white;
+  padding: 12px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.hero-text .btn.hire-me:hover {
+  background-color: #0084c1;
+}
+
+.hero-image {
+  max-width: 45%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
