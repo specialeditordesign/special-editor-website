@@ -41,27 +41,10 @@ p {
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  background-color: var(--dark-blue);
-  color: var(--white);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo {
   height: 60px;
   width: auto;
   display: block;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav-links {
@@ -101,17 +84,9 @@ nav {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: var(--charcoal-black);
-    position: absolute;
-    top: 60px;
-    right: 20px;
     padding: 10px;
     border-radius: 5px;
     z-index: 999;
-  }
-
-  .nav-links.show {
-    display: flex;
   }
 
   nav {
@@ -130,10 +105,6 @@ nav {
     padding: 10px;
     text-align: left;
     border-top: 1px solid #333;
-  }
-
-  header {
-    padding: 10px 20px;
   }
 
   .logo {
@@ -160,6 +131,12 @@ nav {
 .hero p {
   font-size: 18px;
   margin-bottom: 30px;
+}
+
+/* Add here */
+.hero h3,
+.hero h2 {
+  color: var(--aqua-blue);
 }
 
 /* Hero animation */
@@ -866,4 +843,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--charcoal-black);
+}
+
+.top-left-logo {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px;
+  height: 60px;
+  z-index: 999;
+}
+header, nav {
+  position: relative;
 }
