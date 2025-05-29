@@ -756,13 +756,6 @@ body.dark-mode a {
   }
 }
 
-
-
-
-
-
-
-
 .top-contact {
   background-color: #00B4C1;
   color: #fff;
@@ -776,11 +769,6 @@ body.dark-mode a {
 .top-contact:hover {
   background-color: #0084a1;
 }
-
-
-
-
-
 
 nav {
   display: flex;
@@ -799,16 +787,6 @@ nav {
 .top-contact:hover {
   background-color: #0084a1;
 }
-
-
-
-
-
-
-
-
-
-
 
 .custom-footer {
   background-color: #121212;
