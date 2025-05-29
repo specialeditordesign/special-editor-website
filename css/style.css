@@ -687,8 +687,8 @@ body.dark-mode a {
 }
 
 .hire-btn {
-  background-color: #00ff88;
-  color: #121212;
+  background-color: #064C75; /* changed from #00ff88 */
+  color: #ffffff;
   padding: 12px 24px;
   border-radius: 30px;
   font-weight: 600;
@@ -697,7 +697,7 @@ body.dark-mode a {
 }
 
 .hire-btn:hover {
-  background-color: #00d577;
+  background-color: #032f4e; /* optional darker hover shade */
 }
 
 /* Right image */
