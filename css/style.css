@@ -133,10 +133,9 @@ p {
   margin-bottom: 30px;
 }
 
-/* Add here */
-.hero h3,
-.hero h2 {
-  color: var(--aqua-blue);
+.intro-highlight,
+.intro-title {
+  color: var(--aqua-blue) !important;
 }
 
 /* Hero animation */
