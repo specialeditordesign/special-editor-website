@@ -810,6 +810,3 @@ header {
 nav {
   background-color: transparent; /* or #121212 if needed */
 }
-git add .
-git commit -m "Fix header background to black (#121212)"
-git push
