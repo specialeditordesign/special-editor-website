@@ -640,23 +640,10 @@ body.dark-mode a {
   max-width: 600px;
 }
 
-.elito-text h3 {
-  font-size: 28px;
-  color: #FFD700; /* Yellow like Elito */
-  margin-bottom: 10px;
-}
-
 .elito-text h1 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 10px;
-}
-
-.elito-text h2 {
-  font-size: 24px;
-  color: #00ff88;
-  font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .elito-text p {
