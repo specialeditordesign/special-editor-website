@@ -285,7 +285,6 @@ nav {
 
 @media (max-width: 768px) {
   .testimonials-wrapper {
-    flex-direction: column;
     align-items: center;
   }
 
