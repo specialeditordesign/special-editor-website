@@ -64,9 +64,11 @@ nav {
   flex-wrap: wrap;
 }
 
+.nav-links a,
 .nav-links li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   color: var(--white);
-  font-weight: 600;
   padding: 10px 15px;
   text-decoration: none;
   transition: 0.3s;
@@ -74,11 +76,6 @@ nav {
 
  .nav-links li a:hover {
   color: var(--aqua-blue);
-}
-
-.nav-links a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300; /* Poppins Light */
 }
 
 /* Hero Section */
