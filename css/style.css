@@ -685,7 +685,7 @@ body.dark-mode a {
 }
 
 .elito-image img {
-  max-width: 150%;
+  max-width: 120%;
   height: auto;
   transform: scale(1.2); /* Optional boost */
 }
