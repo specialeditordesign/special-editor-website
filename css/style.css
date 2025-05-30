@@ -285,11 +285,14 @@ nav {
 
 @media (max-width: 768px) {
   .testimonials-wrapper {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* optional: centers the cards */
+    gap: 20px; /* spacing between cards */
   }
 
   .testimonial-card {
-    max-width: 90%;
+    width: 90%; /* makes each card take most of the screen width */
   }
 }
 
