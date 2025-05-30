@@ -99,12 +99,11 @@ nav {
   margin-bottom: 30px;
 }
 
-.intro-highlight {
+.intro-highlight,
+..intro-highlight {
   color: var(--aqua-blue);
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  letter-spacing: 0.5px;
+  font-weight: 600; /* SemiBold */
 }
 
 /* Hero animation */
