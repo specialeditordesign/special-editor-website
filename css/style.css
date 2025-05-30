@@ -283,6 +283,18 @@ nav {
   font-style: italic;
 }
 
+.hamburger {
+  display: none;
+}
+
+.nav-links {
+  display: flex !important;  /* Force display on desktop */
+}
+
+.top-contact {
+  display: inline-block !important;
+}
+
 @media (max-width: 768px) {
   .testimonials-wrapper {
     display: flex;
@@ -294,6 +306,46 @@ nav {
   .testimonial-card {
     width: 90%; /* makes each card take most of the screen width */
   }
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.hamburger {
+  display: block;
+  background: none;
+  font-size: 28px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1001;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #121212;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  text-align: right;
+  padding: 10px 20px;
 }
 
 /* Order Form */
