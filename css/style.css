@@ -685,13 +685,13 @@ body.dark-mode a {
 }
 
 .elito-image img {
-  max-width: 120%;
+  max-width: 150%;
   height: auto;
   transform: scale(1.2); /* Optional boost */
 }
 
 /* Mobile Responsive */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .elito-container {
     flex-direction: column;
     text-align: center;
