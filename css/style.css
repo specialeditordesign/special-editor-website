@@ -105,6 +105,12 @@ nav {
   font-weight: 500; /* Medium */
 }
 
+.intro-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium */
+  color: var(--aqua-blue); /* or use a hex like #00B4C1 */
+}
+
 /* Hero animation */
 @keyframes fadeInUp {
   to {
