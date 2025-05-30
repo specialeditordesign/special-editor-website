@@ -1,33 +1,48 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Special Editor - Home</title>
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .nav-links a.active {
+      position: relative;
+    }
+    .nav-links a.active::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--aqua-blue);
+      border-radius: 2px;
+    }
+  </style>
 </head>
 <body>
 
 <nav class="main-nav">
   <img src="assets/logo.png" alt="Special Editor Logo" class="logo" />
-<ul class="nav-links">
-  <li><a href="index.html" class="active">Home</a></li>
-  <li><a href="services.html" class="active">Services</a></li>
-  <li><a href="portfolio.html" class="active">Portfolio</a></li>
-  <li><a href="about.html" class="active">About</a></li>
-  <li><a href="contact.html" class="active">Contact</a></li>
-  <li><a href="order.html" class="active">Order</a></li>
-</ul>
-
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#services" class="nav-link">Services</a></li>
+    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li><a href="#order" class="nav-link">Order</a></li>
+  </ul>
   <a href="contact.html" class="btn top-contact">Contact</a>
 </nav>
 </header>
 
-<section class="elito-hero">
+<section id="home" class="elito-hero">
   <div class="elito-container">
     <div class="elito-text">
       <h3 class="intro-highlight">Hello,</h3>
@@ -42,7 +57,7 @@
   </div>
 </section>
 
-<section class="services">
+<section id="services" class="services">
   <div class="section-title" data-aos="fade-up">
     <h2>My Services</h2>
     <p>I offer a wide range of design and editing services tailored to your needs.</p>
@@ -68,7 +83,7 @@
   </div>
 </section>
 
-<section class="stats" data-aos="zoom-in">
+<section id="stats" class="stats" data-aos="zoom-in">
   <div class="stats-grid">
     <div class="stat-item">
       <h2>1100+</h2>
@@ -89,37 +104,41 @@
   </div>
 </section>
 
-<section class="testimonials">
+<section id="testimonials" class="testimonials">
   <div class="section-title" data-aos="fade-up">
     <h2>What My Customers Say</h2>
     <p>Trusted by clients around the world</p>
   </div>
 
-</div><div class="testimonials-wrapper">
-  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-    <h3>Salim Sedighi</h3>
-    <p class="role">E-commerce & Transportation Entrepreneur</p>
-    <p class="feedback">⭐⭐⭐⭐⭐
-      "I have done many projects with Sakib, and i will have more in the future with him. The reason is that he tries hard to understand the project and makes sure he will provide when it is good. A Trustworthy person to cooperate with!"
-    </p>
+  <div class="testimonials-wrapper">
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Salim Sedighi</h3>
+      <p class="role">E-commerce & Transportation Entrepreneur</p>
+      <p class="feedback">⭐⭐⭐⭐⭐
+        "I have done many projects with Sakib, and i will have more in the future with him. The reason is that he tries hard to understand the project and makes sure he will provide when it is good. A Trustworthy person to cooperate with!"
+      </p>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Mario Bravo</h3>
+      <p class="role">Director of Business Development</p>
+      <p class="feedback">⭐⭐⭐⭐⭐
+        "I couldn’t be happier with the work provided by Sakib and his team of professionals! Their creativity, attention to detail, and professionalism exceeded all expectations. From the initial concept to the final design, they listened to my ideas and brought them to life with a unique and polished touch. The turnaround time was impressive, and they were incredibly responsive to feedback. If you’re looking for a talented designer who delivers exceptional results, I highly recommend Sakib Graphic Designers. They’re a true professional and a joy to work with!"
+      </p>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+      <h3>Jim Resnik</h3>
+      <p class="role">Business Owner</p>
+      <p class="feedback">⭐⭐⭐⭐⭐ 
+        "Sakib is a pro! I worked with him on retouching a theatrical headshot and the results were amazing. Sakib communicated clearly and promptly, did excellent work, and was very patient with my multiple revision requests. Each time I requested a revision he delivered exactly what I had asked for. Highly recommended!"
+      </p>
+    </div>
   </div>
+</section>
 
-  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-    <h3>Mario Bravo</h3>
-    <p class="role">Director of Business Development</p>
-    <p class="feedback">⭐⭐⭐⭐⭐
-      "I couldn’t be happier with the work provided by Sakib and his team of professionals! Their creativity, attention to detail, and professionalism exceeded all expectations. From the initial concept to the final design, they listened to my ideas and brought them to life with a unique and polished touch. The turnaround time was impressive, and they were incredibly responsive to feedback. If you’re looking for a talented designer who delivers exceptional results, I highly recommend Sakib Graphic Designers. They’re a true professional and a joy to work with!"
-    </p>
-  </div>
-
-  <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-  <h3>Jim Resnik</h3>
-  <p class="role">Business Owner</p>
-  <p class="feedback">⭐⭐⭐⭐⭐ 
-    "Sakib is a pro! I worked with him on retouching a theatrical headshot and the results were amazing. Sakib communicated clearly and promptly, did excellent work, and was very patient with my multiple revision requests. Each time I requested a revision he delivered exactly what I had asked for. Highly recommended!"
-  </p>
-</div>
-
+<section id="order" class="order">
+  <!-- Add order form or order-related content here -->
 </section>
 
 <!-- JavaScript: Hamburger Menu -->
@@ -135,6 +154,7 @@
 <script>
   AOS.init();
 </script>
+
 <footer class="custom-footer">
   <div class="footer-content">
     <p class="tagline-top">Have an Imagination?</p>
@@ -162,6 +182,30 @@
 
 <!-- Font Awesome CDN for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (scrollY >= sectionTop - 80) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
