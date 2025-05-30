@@ -99,8 +99,7 @@ nav {
   margin-bottom: 30px;
 }
 
-.intro-highlight,
-..intro-highlight {
+.intro-highlight {
   color: var(--aqua-blue);
   font-family: 'Poppins', sans-serif;
   font-weight: 600; /* SemiBold */
