@@ -124,7 +124,8 @@ nav {
 .intro-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 500; /* Medium */
-  color: var(--aqua-blue); /* or use a hex like #00B4C1 */
+  color: var(--aqua-blue);
+  margin-bottom: 20px; /* 👈 Add this line */
 }
 
 /* Hero animation */
@@ -539,7 +540,7 @@ body.dark-mode a {
 .hero-text h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  margin: 10px 0 30px; /* ← Add extra bottom space */
+  margin: 10px 0;
 }
 
 .hero-text h2 {
