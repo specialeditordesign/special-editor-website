@@ -419,10 +419,16 @@ body.dark-mode a {
 
 @media (max-width: 768px) {
   .stats-grid {
-    display: flex;
-    flex-direction: column; /* 👈 This ensures vertical layout */
-    align-items: center;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .stat-item {
+    flex: 1 1 45%;
+    max-width: 45%;
   }
 }
 
