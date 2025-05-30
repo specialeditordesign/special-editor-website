@@ -691,7 +691,7 @@ body.dark-mode a {
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .elito-container {
     flex-direction: column;
     text-align: center;
