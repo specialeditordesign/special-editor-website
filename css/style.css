@@ -46,13 +46,15 @@ p {
   width: auto;
   display: block;
   margin-left: 200px;
+  margin-right: auto;
 }
 
 nav {
   display: flex;
-  justify-content: center; /* CENTER horizontally */
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--charcoal-black); /* ensure black */
+  background-color: var(--charcoal-black);
+  padding: 0 100px; /* Adds equal space left and right */
 }
 
 .nav-links {
@@ -64,6 +66,7 @@ nav {
   margin: 0 auto;
   flex-wrap: wrap;
 }
+
 
 .nav-links a,
 .nav-links li a {
