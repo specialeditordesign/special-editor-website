@@ -952,12 +952,11 @@ header, nav {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
-  border-radius: 50%;
   padding: 8px;
   font-size: 16px;
-  margin-left: 20px;
+  border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
 .search-toggle:hover {
@@ -965,11 +964,8 @@ header, nav {
 }
 
 .search-box {
-  display: none;
-  position: absolute;
-  top: 80px;
-  left: 100px;
-  z-index: 1000;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .search-box input {
@@ -978,4 +974,9 @@ header, nav {
   border: 1px solid #ccc;
   font-size: 16px;
   outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 180, 193, 0.4);
 }

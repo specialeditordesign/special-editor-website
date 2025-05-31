@@ -30,14 +30,18 @@
 </head>
 <body>
 
-<header class="main-nav">
-  <div class="nav-container">
+<div class="nav-container">
+  <div class="left-header">
     <img src="assets/logo.png" alt="Special Editor Logo" class="logo" />
-<button class="search-toggle" onclick="toggleSearch()">
-  <i class="fas fa-search"></i>
-</button>
-<div id="search-box" class="search-box">
-  <input type="text" id="searchInput" placeholder="Search..." oninput="searchPage()" />
+    <div class="search-wrapper">
+      <button class="search-toggle">
+        <i class="fas fa-search"></i>
+      </button>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." oninput="searchPage()" />
+      </div>
+    </div>
+  </div>
 </div>
     <ul class="nav-links">
       <li><a href="#home" class="nav-link">Home</a></li>
