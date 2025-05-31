@@ -738,7 +738,6 @@ body.dark-mode a {
   background-color: #121212; /* Your desired black */
   color: white;
   padding: 100px 40px;
-  flex-wrap: wrap;
 }
 
 .hero-text {
