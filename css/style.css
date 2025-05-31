@@ -45,7 +45,6 @@ p {
   height: 60px;
   width: auto;
   display: block;
-  margin-left: 40px; /* Updated for better spacing */
 }
 
 nav {
@@ -54,6 +53,15 @@ nav {
   align-items: center;
   padding: 0 100px; /* ✅ Equal space on both sides */
   background-color: var(--charcoal-black);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
