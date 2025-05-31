@@ -705,19 +705,26 @@ body.dark-mode a {
 }
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 20px;
+    flex-direction: row; /* Keep horizontal layout */
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 20px;
   }
 
-  .hero-text {
-    max-width: 100%;
+  .hero-text, .hero-image {
+    max-width: 50%;
+    flex: 1;
+    text-align: left;
   }
 
-  .hero-image {
-    margin-top: 30px;
+  .hero-image img {
+    width: 100%;
+    height: auto;
   }
 }
+
 .hero-section {
   display: flex;
   justify-content: space-between;
