@@ -328,11 +328,8 @@ nav {
   font-weight: bold;
   transition: background-color 0.3s ease;
   white-space: nowrap;
+  margin-top: 10px;
 }
-
-  .top-contact {
-    margin-top: 10px;
-  }
 
 .top-contact:hover {
   background-color: #0084a1;
