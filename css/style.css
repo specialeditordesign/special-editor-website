@@ -703,19 +703,25 @@ body.dark-mode a {
   object-fit: cover;
   border-radius: 10px;
 }
+
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: row; /* Keep horizontal layout */
-    align-items: center;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
     padding: 40px 20px;
-    flex-wrap: nowrap; /* Prevent wrapping */
     gap: 20px;
   }
 
   .hero-text, .hero-image {
+    width: 50%;
+    flex: 0 0 50%;
     max-width: 50%;
-    flex: 1;
+  }
+
+  .hero-text {
     text-align: left;
   }
 
