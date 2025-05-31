@@ -56,21 +56,35 @@ nav {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-links {
   display: flex;
   gap: 30px;
   list-style: none;
+  justify-content: center;
+  flex: 1;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-links a,
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #00B4C1;
+}
+
 .nav-links li a {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -284,14 +298,12 @@ nav {
   color: #444;
   font-style: italic;
 }
-/* Desktop Navbar */
+/* Header background */
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: var(--charcoal-black);
+  background-color: #121212;
+  padding: 20px 0;
   position: relative;
+  z-index: 999;
 }
 
 /* Desktop menu visible */
@@ -307,19 +319,20 @@ nav {
   font-weight: 500;
 }
 
-/* Contact button desktop */
 .top-contact {
-  display: inline-block;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #064C75;
+  background-color: #00B4C1;
   color: white;
-  padding: 8px 16px;
+  padding: 10px 24px;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
+
+  .top-contact {
+    margin-top: 10px;
+  }
 
 .top-contact:hover {
   background-color: #0084a1;
@@ -350,6 +363,17 @@ nav {
     padding: 10px 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+  }
+
+   .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
   }
 
   .nav-links.show {
