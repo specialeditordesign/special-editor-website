@@ -52,8 +52,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 100px; /* ✅ Equal space on both sides */
   background-color: var(--charcoal-black);
-  padding: 0 40px; /* Adjusts both left and right spacing */
 }
 
 .nav-links {
@@ -308,8 +308,6 @@ nav {
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
-  margin-left: 20;
-  margin-right: 40px;
 }
 
 .top-contact:hover {
@@ -344,10 +342,6 @@ nav {
   .nav-links li {
     padding: 10px 20px;
     text-align: right;
-  }
-
-  .top-contact {
-    display: none;
   }
 
   .hamburger {
@@ -814,21 +808,7 @@ body.dark-mode a {
 }
 
 .top-contact {
-  background-color: #00B4C1;
-  color: #fff;
-  padding: 8px 16px;
-  margin-left: auto;
-  margin-right: 200px;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-}
-
-.top-contact:hover {
-  background-color: #0084a1;
-}
-
-.top-contact {
+  display: inline-block;
   background-color: #00B4C1;
   color: white;
   padding: 8px 16px;
@@ -836,9 +816,14 @@ body.dark-mode a {
   border-radius: 6px;
   font-weight: 600;
 }
-
 .top-contact:hover {
   background-color: #0084a1;
+}
+
+@media (max-width: 768px) {
+  .top-contact {
+    display: none;
+  }
 }
 
 .custom-footer {
