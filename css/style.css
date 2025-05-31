@@ -45,8 +45,7 @@ p {
   height: 60px;
   width: auto;
   display: block;
-  margin-left: 200px;
-  margin-right: auto;
+  margin-left: 20px;  /* Adjust as needed */
 }
 
 nav {
@@ -54,7 +53,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--charcoal-black);
-  padding: 0 100px;
+  padding: 0 40px; /* Adjusts both left and right spacing */
 }
 
 .nav-links {
@@ -314,8 +313,8 @@ nav {
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
-  margin-left: auto;
-  margin-right: 200px;
+  margin-left: 20;
+  margin-right: 40px;
 }
 
 .top-contact:hover {
