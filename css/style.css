@@ -310,6 +310,9 @@ nav {
 /* Contact button desktop */
 .top-contact {
   display: inline-block;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   background-color: #00B4C1;
   color: white;
   padding: 8px 16px;
