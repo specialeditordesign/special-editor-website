@@ -121,7 +121,7 @@ nav {
 
 .intro-title {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500; /* Medium */
+  font-weight: 300; /* Medium */
   color: var(--aqua-blue);
   margin-bottom: 20px; /* 👈 Add this line */
 }
