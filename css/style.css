@@ -943,3 +943,8 @@ header, nav {
 .social-icons a:hover {
   color: #00B4C1; /* or your brand color */
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
