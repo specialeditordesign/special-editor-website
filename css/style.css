@@ -45,7 +45,7 @@ p {
   height: 60px;
   width: auto;
   display: block;
-  margin-left: 20px;  /* Adjust as needed */
+  margin-left: 40px; /* Updated for better spacing */
 }
 
 nav {
@@ -284,11 +284,6 @@ nav {
   padding: 20px 40px;
   background-color: var(--charcoal-black);
   position: relative;
-}
-
-.logo {
-  height: 60px;
-  margin-left: 200px;
 }
 
 /* Desktop menu visible */
