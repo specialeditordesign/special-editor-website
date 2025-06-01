@@ -954,6 +954,103 @@ header, nav {
   margin-top: 10px;
 }
 
+.contact-wrapper {
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #121212;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #00B4C1;
+}
+
+.contact-header p {
+  color: #888;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-info .info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.contact-info .info-box i {
+  font-size: 20px;
+  color: #00B4C1;
+}
+
+.contact-info .social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-info .social-icons a {
+  font-size: 18px;
+  color: #00B4C1;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.btn.hire-me {
+  background-color: #00B4C1;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.hire-me:hover {
+  background-color: #0095a4;
+}
+
 /* ------------------------
    Responsive: Mobile Styles
 --------------------------- */
@@ -1132,6 +1229,18 @@ header, nav {
 
   .social-icons {
     text-align: center;
+  }
+
+    .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header h1 {
+    font-size: 32px;
+  }
+
+  .contact-wrapper {
+    padding: 40px 15px;
   }
 
 }
