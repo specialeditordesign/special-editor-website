@@ -931,20 +931,33 @@ header, nav {
   }
 
   /* Hero Section */
-  .hero-section {
-    flex-direction: column;
+   .hero-section {
+    flex-direction: row; /* Make it horizontal on mobile */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrap so text and image stay side by side */
     padding: 40px 20px;
     gap: 20px;
   }
 
-  .hero-text, .hero-image {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
+  .hero-text,
+  .hero-image {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .hero-text {
-    text-align: center;
+    text-align: left;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hire-me {
+    margin-top: 20px; /* Add spacing below text */
   }
 
   /* Elito Hero */
