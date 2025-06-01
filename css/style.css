@@ -961,8 +961,8 @@ header, nav {
   text-decoration: none;
 }
 
-.hero-text .btn.hire-me,
-.hero-section .btn.hire-me {
+/* Hide hero HIRE ME button only on mobile */
+.hero-section .hire-me {
   display: none !important;
 }
 
