@@ -1114,6 +1114,7 @@ header, nav {
     flex-direction: column;
   }
 
+  /* Contact Page */
   .contact-form,
   .contact-info {
     width: 100%;
