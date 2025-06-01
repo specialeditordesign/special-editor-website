@@ -1051,6 +1051,28 @@ header, nav {
   background-color: #0095a4;
 }
 
+/* Contact Page Hero Section */
+.contact-hero {
+  background-color: #00B4C1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-hero .hero-content h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-hero .hero-content p {
+  color: #121212;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
 /* ------------------------
    Responsive: Mobile Styles
 --------------------------- */
