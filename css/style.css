@@ -965,5 +965,18 @@ header, nav {
   .elito-text h2 {
     font-size: 20px;
   }
+ 
+  /* Testimonial */
+  .testimonials-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+  }
 
 }
+/* ------------------------
+   Responsive: Mobile Styles ENDS HERE
+--------------------------- */
