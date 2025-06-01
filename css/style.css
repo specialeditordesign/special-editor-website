@@ -961,6 +961,10 @@ header, nav {
   text-decoration: none;
 }
 
+.hero-text .btn.hire-me {
+  display: none;
+}
+
   /* Elito Hero */
   .elito-container {
     flex-direction: column;
