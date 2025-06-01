@@ -855,6 +855,85 @@ header, nav {
   width: 140px;
 }
 
+/* ---------- Contact Form Styling ---------- */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-subtext {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00B4C1;
+}
+
+.contact-form .btn {
+  margin-top: 10px;
+}
+
 /* ------------------------
    Responsive: Mobile Styles
 --------------------------- */
@@ -1009,6 +1088,29 @@ header, nav {
 
   .testimonial-card {
     max-width: 90%;
+  }
+
+   .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .contact-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contact-subtext {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .social-icons {
+    text-align: center;
   }
 
 }
