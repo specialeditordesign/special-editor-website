@@ -930,35 +930,37 @@ header, nav {
     font-size: 14px;
   }
 
-  /* Hero Section */
-   .hero-section {
-    flex-direction: row; /* Make it horizontal on mobile */
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap; /* Prevent wrap so text and image stay side by side */
-    padding: 40px 20px;
-    gap: 20px;
-  }
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal layout */
+  align-items: flex-start; /* Align from top to avoid center overlap */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 40px 20px;
+  gap: 20px;
+}
 
-  .hero-text,
-  .hero-image {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+.hero-text,
+.hero-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 
-  .hero-text {
-    text-align: left;
-  }
+.hero-text {
+  text-align: left;
+}
 
-  .hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Prevent image from overflowing vertically */
+}
 
-  .hire-me {
-    margin-top: 20px; /* Add spacing below text */
-  }
+.hire-me {
+  margin-top: 20px;
+  display: inline-block;
+}
 
   /* Elito Hero */
   .elito-container {
