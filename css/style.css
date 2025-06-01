@@ -965,6 +965,21 @@ header, nav {
   display: none;
 }
 
+ /* Footer Hire Button */
+.custom-footer .hire-me {
+  display: inline-block !important; /* Force display if it's hidden */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+}
+
+.custom-footer {
+  padding: 60px 20px !important; /* Add spacing if needed */
+  overflow: visible;
+}
+
   /* Elito Hero */
   .elito-container {
     flex-direction: column;
