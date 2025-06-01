@@ -932,34 +932,33 @@ header, nav {
 
 /* Hero Section */
 .hero-section {
-  display: flex;
-  flex-direction: row; /* Ensure horizontal layout */
-  align-items: flex-start; /* Align from top to avoid center overlap */
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  position: relative;
+  flex-direction: column; /* Mobile = vertical layout */
+  align-items: center;
+  justify-content: center;
   padding: 40px 20px;
   gap: 20px;
 }
 
 .hero-text,
 .hero-image {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.hero-text {
-  text-align: left;
-}
-
-.hero-image img {
   width: 100%;
-  height: auto;
-  object-fit: contain; /* Prevent image from overflowing vertically */
+  max-width: 100%;
+  text-align: center;
 }
 
 .hire-me {
-  margin-top: 20px;
-  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: #00B4C1;
+  padding: 12px 30px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
 }
 
   /* Elito Hero */
