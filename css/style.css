@@ -961,13 +961,14 @@ header, nav {
   text-decoration: none;
 }
 
-.hero-text .btn.hire-me {
-  display: none;
+.hero-text .btn.hire-me,
+.hero-section .btn.hire-me {
+  display: none !important;
 }
 
- /* Footer Hire Button */
+/* Footer Hire Button */
 .custom-footer .hire-me {
-  display: inline-block !important; /* Force display if it's hidden */
+  display: inline-block !important;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -980,24 +981,25 @@ header, nav {
   overflow: visible;
 }
 
-  /* Elito Hero */
-  .elito-container {
-    flex-direction: column;
-    text-align: center;
-  }
+/* ✅ Elito Hero */
+.elito-container {  /* <- Fixed by adding the curly brace */
+  flex-direction: column;
+  text-align: center;
+}
 
-  .elito-text, .elito-image {
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
+.elito-text,
+.elito-image {
+  max-width: 100%;
+  flex: 1 1 100%;
+}
 
-  .elito-text h1 {
-    font-size: 36px;
-  }
+.elito-text h1 {
+  font-size: 36px;
+}
 
-  .elito-text h2 {
-    font-size: 20px;
-  }
+.elito-text h2 {
+  font-size: 20px;
+}
  
   /* Testimonial */
   .testimonials-wrapper {
