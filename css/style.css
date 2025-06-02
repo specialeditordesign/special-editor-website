@@ -859,7 +859,7 @@ header, nav {
 @layer services {
   /* Service Hero Banner */
   .services-hero {
-    background-color: #121212;
+    background-color: #064C75;
     padding: 80px 20px;
     text-align: center; /* ensures text is centered */
     color: white;
