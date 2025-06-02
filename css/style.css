@@ -1351,6 +1351,7 @@ header, nav {
 
    .contact-container {
     flex-direction: column;
+    padding: 80px 20px;
   }
 
   /* Contact Page */
