@@ -858,29 +858,30 @@ header, nav {
 /* ---------- Service Page ---------- */
 @layer services {
   /* Service Hero Banner */
-  .services-hero {
-    background-color: #064C75;
-    padding: 80px 20px;
-    text-align: center; /* ensures text is centered */
-    color: white;
-  }
+.services-hero {
+  background-color: #005680; /* or your chosen blue */
+  padding: 80px 20px;
+  text-align: center; /* <-- this centers all inline text */
+  color: white;
+}
 
-  .services-hero h1 {
-    color: #fff;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-  }
+.services-hero h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .services-hero p {
-    color: #ccc;
-    font-size: 16px;
-    max-width: 800px;
-    margin: 0 auto; /* centers the block */
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-  }
+.services-hero p {
+  color: #ccc;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto; /* <-- this horizontally centers the paragraph */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  white-space: normal; /* ensure line breaks wrap properly */
+}
 
 }
 
