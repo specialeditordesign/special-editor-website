@@ -1044,24 +1044,19 @@ header, nav {
     min-width: 280px;
   }
 
-  .form-heading {
-  font-family: 'Poppins', sans-serif;
-  font-size: 36px;
-  font-weight: 800;
-  color: #121212;
-  margin-bottom: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .form-heading {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   color: #121212;
-  margin-bottom: 20px;
-  text-align: center;
+  margin: 40px 0 30px;   /* top, sides, bottom */
+  text-align: left;
   text-transform: uppercase;
   font-size: clamp(24px, 5vw, 40px);
+}
+
+.form-inner {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
   .contact-form input,
