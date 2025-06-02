@@ -971,7 +971,7 @@ header, nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin: 80px auto 60px; /* TOP increased to 80px, bottom 60px */
+  margin: 100px auto 60px;  /* Top space increased */
   max-width: 1100px;
   padding: 0 20px;
 }
@@ -1023,7 +1023,8 @@ header, nav {
   padding: 40px 30px;
   border-radius: 12px;
   max-width: 700px;
-  margin: 80px auto 100px; /* TOP increased to 80px, bottom 100px for footer gap */
+  width: 100%;
+  margin: 80px auto 120px;  /* Top and bottom spacing improved */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
