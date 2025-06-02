@@ -1090,6 +1090,12 @@ header, nav {
   background-color: #0095a4;
 }
 
+.contact-wrapper {
+  padding: 80px 20px;
+  background-color: #fff;
+  min-height: 300px; /* <--- Add this line */
+}
+
 /* Contact Hero Banner */
 .contact-hero {
   background-color: #00B4C1;
