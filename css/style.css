@@ -971,7 +971,7 @@ header, nav {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 40px 20px;
+    padding: 80px 20px;
   }
 
   .contact-info {
@@ -1351,7 +1351,6 @@ header, nav {
 
    .contact-container {
     flex-direction: column;
-    padding: 80px 20px;
   }
 
   /* Contact Page */
