@@ -862,6 +862,7 @@ header, nav {
   background-color: #005680; /* or your chosen blue */
   padding: 80px 20px;
   text-align: center; /* <-- this centers all inline text */
+  align-items: center;
   color: white;
 }
 
@@ -892,6 +893,7 @@ header, nav {
     background-color: #00B4C1;
     padding: 80px 20px;
     text-align: center;
+    align-items: center;
     color: white;
   }
 
@@ -912,10 +914,6 @@ header, nav {
     line-height: 1.6;
   }
 
-  .portfolio-hero {
-  min-height: 300px;
-}
-
 
 }
 
@@ -930,6 +928,7 @@ header, nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  align-items: center;
   color: white;
 }
 
