@@ -892,36 +892,36 @@ header, nav {
 
 /* ---------- Portfolio Page ---------- */
 @layer portfolio {
-   /* Portfolio Hero Banner */
   .portfolio-hero {
-    background-color: #00B4C1;
-    padding: 80px 20px;
-    text-align: center;
-    align-items: center;
-    color: white;
-  }
-
-  .portfolio-hero h1 {
-    color: #fff;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .portfolio-hero p {
-    color: #121212;
-    font-size: 16px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-  }
-
-  .portfolio-hero {
+  background-color: #00B4C1;
   min-height: 300px;
+  padding: 80px 20px;
+
+  /* Center everything */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertical center */
+  align-items: center;      /* Horizontal center */
+  text-align: center;
+  color: white;
 }
 
+.portfolio-hero h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-hero p {
+  color: #121212;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
 
 }
 
