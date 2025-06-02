@@ -894,7 +894,7 @@ header, nav {
 /* ---------- Portfolio Page ---------- */
 @layer portfolio {
   /* Portfolio Hero Banner */
- .portfolio-hero {
+.portfolio-hero {
   background-color: #00B4C1;
   padding: 80px 20px;
   display: flex;
@@ -903,6 +903,7 @@ header, nav {
   justify-content: center;
   text-align: center;
   color: white;
+  min-height: 300px;
 }
 
 .portfolio-hero h1 {
@@ -919,10 +920,8 @@ header, nav {
   margin: 0 auto;
   font-weight: 400;
   line-height: 1.6;
-}
-
-.portfolio-hero {
-  min-height: 300px;
+  padding: 0 20px;
+  text-align: center;
 }
 
 }
