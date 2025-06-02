@@ -961,6 +961,17 @@ header, nav {
   min-height: 300px;
 }
 
+.about-hero p {
+  color: #ccc;
+  font-size: 16px;
+  max-width: 700px;       /* reduce width to encourage line break */
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  white-space: normal;
+}
+
 }
 
 /* ---------- Contact Page ---------- */
