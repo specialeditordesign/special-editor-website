@@ -1132,6 +1132,17 @@ header, nav {
   }
 
   /* Contact Hero Banner */
+  .contact-intro-text {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+  } 
+  
+  .contact-intro-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
   .contact-hero {
     background-color: #00B4C1;
     padding: 80px 20px 40px;
