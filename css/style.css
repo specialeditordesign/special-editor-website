@@ -1140,6 +1140,11 @@ header, nav {
   font-weight: 400;
   line-height: 1.6;
 }
+
+.contact-hero {
+  min-height: 300px;
+}
+
   
 }
 
