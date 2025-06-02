@@ -1137,11 +1137,6 @@ header, nav {
     font-weight: 500;
     margin-bottom: 20px;
   } 
-  
-  .contact-intro-wrapper {
-    display: flex;
-    justify-content: center;
-  }
 
   .contact-hero {
     background-color: #00B4C1;
