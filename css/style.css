@@ -902,7 +902,7 @@ header, nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: #121212;
   min-height: 300px;
 }
 
@@ -915,7 +915,7 @@ header, nav {
 
 .portfolio-hero .portfolio-intro-text {
   font-size: 18px;
-  color: #121212;
+  color: white;
   max-width: 700px;
   margin: 0 auto;
   font-weight: 400;
