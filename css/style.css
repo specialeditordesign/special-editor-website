@@ -978,6 +978,7 @@ header, nav {
 
 .contact-section {
   padding: 100px 20px; /* Top and bottom space */
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1068,6 +1069,10 @@ header, nav {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+}
+
+.contact-form .btn {
+  margin-bottom: 20px;
 }
 
 .contact-form .btn:hover {
