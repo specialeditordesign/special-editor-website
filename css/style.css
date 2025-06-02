@@ -979,11 +979,6 @@ header, nav {
     min-width: 280px;
   }
 
-  .contact-form {
-    flex: 1;
-    min-width: 280px;
-  }
-
   .contact-title {
     font-size: 32px;
     margin-bottom: 10px;
@@ -1043,6 +1038,31 @@ header, nav {
     color: #ccc;
     margin-bottom: 5px;
   }
+
+    .contact-form {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .form-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: #121212;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #121212;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(24px, 5vw, 40px);
+}
 
   .contact-form input,
   .contact-form textarea {
