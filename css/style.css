@@ -951,8 +951,9 @@ header, nav {
 .about-hero .about-intro-text {
   font-size: 18px;
   color: #121212;
-  max-width: 700px;
+  max-width: 900px;       /* widen slightly if needed */
   margin: 0 auto;
+  padding: 0 20px;         /* ⬅️ this adds left/right space */
   font-weight: 400;
   line-height: 1.6;
 }
