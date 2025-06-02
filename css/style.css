@@ -854,7 +854,58 @@ header, nav {
   font-size: 14px;
   width: 140px;
 }
-/* ---------- About Page Form Styling ---------- */
+
+/* ---------- Service Page ---------- */
+/* Service Hero Banner */
+.services-hero {
+  background-color: #00B4C1;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-hero h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-hero p {
+  color: #121212;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- Portfolio Page ---------- */
+
+.portfolio-hero {
+  background-color: #00B4C1;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.portfolio-hero h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-hero p {
+  color: #121212;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- About Page ---------- */
 /* About Hero Banner */
 .about-hero {
   background-color: #00B4C1;
@@ -879,7 +930,7 @@ header, nav {
   line-height: 1.6;
 }
 
-/* ---------- Contact Page Form Styling ---------- */
+/* ---------- Contact Page ---------- */
 .contact-container {
   display: flex;
   gap: 40px;
