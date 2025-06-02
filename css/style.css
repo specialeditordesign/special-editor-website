@@ -884,6 +884,10 @@ header, nav {
   white-space: normal; /* ensure line breaks wrap properly */
 }
 
+.services-hero {
+  min-height: 300px;
+}
+
 }
 
 /* ---------- Portfolio Page ---------- */
@@ -913,6 +917,10 @@ header, nav {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
   }
+
+  .portfolio-hero {
+  min-height: 300px;
+}
 
 
 }
