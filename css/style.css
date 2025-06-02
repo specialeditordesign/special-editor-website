@@ -932,6 +932,11 @@ header, nav {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
   }
+
+  .about-hero {
+  min-height: 300px;
+}
+
 }
 
 /* ---------- Contact Page ---------- */
@@ -1144,7 +1149,6 @@ header, nav {
 .contact-hero {
   min-height: 300px;
 }
-
   
 }
 
