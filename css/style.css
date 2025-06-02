@@ -912,6 +912,11 @@ header, nav {
     line-height: 1.6;
   }
 
+  .portfolio-hero {
+  min-height: 300px;
+}
+
+
 }
 
 /* ---------- About Page ---------- */
