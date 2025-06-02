@@ -857,12 +857,17 @@ header, nav {
 
 /* ---------- Service Page ---------- */
 @layer services {
-  /* Service Hero Banner */
+/* Service Hero Banner */
 .services-hero {
-  background-color: #005680; /* or your chosen blue */
+  background-color: #005680;
+  min-height: 300px;
   padding: 80px 20px;
-  text-align: center; /* <-- this centers all inline text */
-  align-items: center;
+    /* Center everything */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical alignment */
+  align-items: center;     /* horizontal alignment */
+  text-align: center;
   color: white;
 }
 
@@ -878,14 +883,10 @@ header, nav {
   color: #ccc;
   font-size: 16px;
   max-width: 800px;
-  margin: 0 auto; /* <-- this horizontally centers the paragraph */
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  white-space: normal; /* ensure line breaks wrap properly */
-}
-
-.services-hero {
-  min-height: 300px;
+  white-space: normal;
 }
 
 }
@@ -896,7 +897,6 @@ header, nav {
   background-color: #00B4C1;
   min-height: 300px;
   padding: 80px 20px;
-
   /* Center everything */
   display: flex;
   flex-direction: column;
