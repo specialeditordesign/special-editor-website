@@ -930,8 +930,33 @@ header, nav {
   display: block;
 }
 
+.portfolio-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.category-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 10px 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.category-btn.active,
+.category-btn:hover {
+  color: #00c8dd;
+  border-color: #00c8dd;
+}
+
   /* Portfolio Hero Banner */
-  
+
   .portfolio-hero {
   background-color: #00B4C1;
   min-height: 300px;
