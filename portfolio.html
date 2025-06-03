@@ -40,27 +40,38 @@
 
 <!-- Category Filter Bar -->
 <div class="portfolio-categories">
-  <div class="category-box">BRAND IDENTITY DESIGN</div>
-  <div class="category-box">STATIONERY DESIGN</div>
-  <div class="category-box">VIDEO EDITING</div>
-  <div class="category-box">IMAGE EDITING</div>
-  <div class="category-box">SOCIAL MEDIA DESIGN</div>
+  <div class="category-box" data-filter="all">All</div>
+  <div class="category-box" data-filter="brand">Brand Identity Design</div>
+  <div class="category-box" data-filter="stationery">Stationery Design</div>
+  <div class="category-box" data-filter="video">Video Editing</div>
+  <div class="category-box" data-filter="image-editing">Image Editing</div>
+  <div class="category-box" data-filter="social">Social Media Design</div>
 </div>
 
     <!-- Portfolio Items -->
-    <div class="portfolio-grid">
-      <div class="portfolio-item branding">
-        <img src="assets/bi/1.jpg" alt="Project 1">
-      </div>
-      <div class="portfolio-item illustrator">
-        <img src="assets/bi/2.jpg" alt="Project 2">
-      </div>
-      <div class="portfolio-item marketing">
-        <img src="assets/bi/3.jpg" alt="Project 3">
-      </div>
-      <!-- Add more items as needed -->
-    </div>
+<div class="portfolio-gallery">
+
+  <div class="portfolio-item brand">
+    <img src="assets/bi/1.jpg" alt="Brand Identity Design">
   </div>
+
+  <div class="portfolio-item stationery">
+    <img src="assets/bi/2.jpg" alt="Stationery Design">
+  </div>
+
+  <div class="portfolio-item video">
+    <img src="images/video1.jpg" alt="Video Editing">
+  </div>
+
+  <div class="portfolio-item image-editing">
+    <img src="images/image1.jpg" alt="Image Editing">
+  </div>
+
+  <div class="portfolio-item social">
+    <img src="images/social1.jpg" alt="Social Media Design">
+  </div>
+      <!-- Add more items as needed -->
+ </div>
 </section>
 
   <footer class="custom-footer">
@@ -89,15 +100,18 @@
 </footer>
 
 <script>
-  const buttons = document.querySelectorAll('.filter-btn');
+  const filterButtons = document.querySelectorAll('.category-box');
   const items = document.querySelectorAll('.portfolio-item');
 
-  buttons.forEach(button => {
+  filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
+      const filter = button.getAttribute('data-filter');
+
+      // Remove 'active' from all and add to clicked
+      filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
 
-      const filter = button.getAttribute('data-filter');
+      // Show/hide items
       items.forEach(item => {
         if (filter === 'all' || item.classList.contains(filter)) {
           item.style.display = 'block';
