@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Title - Special Editor</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -48,37 +49,39 @@
   <div class="category-box" data-filter="image-editing">Image Editing</div>
 </div>
 
-    <!-- Portfolio Items -->
+<!-- Portfolio Items -->
 <div class="portfolio-gallery">
 
-          <!-- Brand Identity Design -->
-  <div class="portfolio-item brand">
+  <!-- Brand Identity Design -->
+  <div class="portfolio-item brand" data-aos="fade-up" data-aos-delay="0">
     <img src="assets/bi/1.jpg" alt="Brand Identity Design">
   </div>
 
-              <!-- Video Editing -->
-<div class="portfolio-item video">
-  <video controls width="100%">
-    <source src="assets/ve/product-video.mp4" type="video/mp4">
-  </video>
-</div>
+  <!-- Video Editing -->
+  <div class="portfolio-item video" data-aos="fade-up" data-aos-delay="100">
+    <video controls width="100%">
+      <source src="assets/ve/product-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-          <!-- Stationery Design -->
-  <div class="portfolio-item stationery">
+  <!-- Stationery Design -->
+  <div class="portfolio-item stationery" data-aos="fade-up" data-aos-delay="200">
     <img src="assets/sd/1.png" alt="Stationery Design">
   </div>
 
-                <!-- Social Media Design -->
-    <div class="portfolio-item social">
-      <img src="assets/smd/1.png" alt="Social Media Design">
-    </div>
+  <!-- Social Media Design -->
+  <div class="portfolio-item social" data-aos="fade-up" data-aos-delay="300">
+    <img src="assets/smd/1.png" alt="Social Media Design">
+  </div>
 
-            <!-- Image Editing -->
-  <div class="portfolio-item image-editing">
+  <!-- Image Editing -->
+  <div class="portfolio-item image-editing" data-aos="fade-up" data-aos-delay="400">
     <img src="assets/ie/1.png" alt="Image Editing">
   </div>
-      <!-- Add more items as needed -->
- </div>
+
+</div>
+
 </section>
 
   <footer class="custom-footer">
@@ -122,11 +125,25 @@
       items.forEach(item => {
         if (filter === 'all' || item.classList.contains(filter)) {
           item.style.display = 'block';
+          item.classList.remove('hidden');
         } else {
           item.style.display = 'none';
+          item.classList.add('hidden');
         }
       });
+
+      // Re-initialize AOS to animate filtered elements
+      AOS.refresh();
     });
+  });
+</script>
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
   });
 </script>
 
