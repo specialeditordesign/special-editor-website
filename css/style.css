@@ -893,6 +893,45 @@ header, nav {
 
 /* ---------- Portfolio Page ---------- */
 @layer portfolio {
+  .portfolio-filters .filter-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #555;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  color: #00c8dd;
+  border-color: #00c8dd;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+
+  /* Portfolio Hero Banner */
+  
   .portfolio-hero {
   background-color: #00B4C1;
   min-height: 300px;
@@ -990,7 +1029,7 @@ header, nav {
 .contact-section {
   padding: 100px 20px; /* Top and bottom space */
   margin-bottom: 60px;
-  background: #E2E2E2; /* light blue to test */
+  background: #E2E2E2;
   display: flex;
   flex-direction: column;
   align-items: center;
