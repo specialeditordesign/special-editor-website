@@ -930,6 +930,13 @@ header, nav {
   display: block;
 }
 
+.portfolio-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* Portfolio Categories Button Gap */
 
 .portfolio-categories {
