@@ -930,12 +930,14 @@ header, nav {
   display: block;
 }
 
+/* Portfolio Categories Button Gap */
+
 .portfolio-categories {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 40px 0;
+  padding: 40px 0; /* Adds white space above and below */
 }
 
 .category-btn {
