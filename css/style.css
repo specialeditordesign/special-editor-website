@@ -1047,7 +1047,7 @@ header, nav {
   font-weight: 800;
   color: #121212;
   margin-bottom: 30px;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-size: clamp(24px, 5vw, 40px);
 }
