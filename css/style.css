@@ -990,6 +990,7 @@ header, nav {
 .contact-section {
   padding: 100px 20px; /* Top and bottom space */
   margin-bottom: 60px;
+  background: #E2E2E2; /* light blue to test */
   display: flex;
   flex-direction: column;
   align-items: center;
