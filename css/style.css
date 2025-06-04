@@ -920,12 +920,21 @@ header, nav {
 
 .portfolio-item {
   max-width: 300px;
+  height: auto;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   transition: transform 0.3s ease, opacity 0.3s ease;
   flex: 1 1 300px; /* grow, shrink, base width */
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: nowrap; /* or wrap if you want it to wrap on smaller screens */
+  gap: 20px; /* spacing between boxes */
+  justify-content: center; /* or space-between, space-around, etc. */
+  align-items: flex-start; /* optional for vertical alignment */
 }
 
 .portfolio-item img {
