@@ -933,7 +933,7 @@ header, nav {
   display: flex;
   flex-wrap: nowrap; /* or wrap if you want it to wrap on smaller screens */
   gap: 20px; /* spacing between boxes */
-  justify-content: center; /* or space-between, space-around, etc. */
+  justify-content: center;
   align-items: flex-start; /* optional for vertical alignment */
 }
 
