@@ -918,17 +918,16 @@ header, nav {
   justify-content: center;
 }
 
-.portfolio-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .portfolio-item {
-  flex: 1 1 300px;
-  max-width: 300px;
+  max-width: 100%;
   box-sizing: border-box;
   border-radius: 8px;
   overflow: hidden;
